@@ -35,7 +35,7 @@ feature {NONE} -- Initialization
 feature	-- Access
 
 		is_empty : BOOLEAN
-				-- Is there no items?
+				-- Is there no item?
 			do
 				Result := (queue.count = 0)
 			end

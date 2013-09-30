@@ -69,6 +69,7 @@ feature {NONE} -- Implementation
 	set: LINKED_SET [NATURAL]
 
 invariant
+	not_empty: not set.count.is_empty
 	items_positives: across Current as ic all ic.item > 0 end
 	count_definition: count = set.count
 	first_definition: first = set.first
